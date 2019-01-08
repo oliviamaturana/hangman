@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css.css"/>
+</head>
+<body>
+<h1>HANGMAN</h1>
+
+
+<button id="start" onclick="startGame()">Start New Game</button>
+
+<div id="hangFrame"></div>
+
+ <div id="wordSpaces"></div>
+
+<input type="text" id="guessedLetter" placeholder = "Guess a letter">
+<input type ="text" id="guessedWord" placeholder="Guess Entire Word">
+<button id="check" onclick="handleGuess()">Make your Guess!</button>
+
+<h2>Guessed Letters:</h2>
+
+<div id="guessedLetters"></div>
+
+<h3>Guesses Remaining:</h3>
+
+<div id="guesses"></div>
+
+</body>
+</html>
