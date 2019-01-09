@@ -1,6 +1,10 @@
-var word = "";
 
-var words = ["blobfish","tarantula","goat","seal","elephant","dinosaur","hyena","lion"]
+
+var easyPeasy = ["blobfish","tarantula","goat","seal","elephant","dinosaur","hyena","lion"];
+var kindaTricky = ["reminisce", "capitalism","enchilada", "baguette", "raindrop", "magnify", "internet", ""]
+var superTrippy = ["expunged", "cognizant", "serendipitous", "humorous", "catastrophic", "camaraderie", "repugnant", "sabotage"]
+
+var word = "";
 
 var guesses = 8;
 
@@ -13,12 +17,20 @@ function startGame(){
     word = "";
     guessedLetters = [];
     guesses = 8;
+    document.getElementById("guessedLetters").innerHTML = "";
+    document.getElementById("guesses").innerHTML = "";
+    document.getElementById("hangFrame").innerHTML = "";
+
     var rand = words[Math.floor(Math.random() * words.length)];
     console.log(rand);
-    document.getElementById("guessedLetter").innerHTML = "";
-    document.getElementById("guesses").innerHTML = "";
-    document.getElementById("hangFrame").innerHTML = "<img src=img/8.png>";
 
+    var level = documenrnt.getElementById("level").value;
+    if(level == 1){
+        word = easyPeasy[Math.floor(Math.random() * easyPeasy.length)];
+    }
+    if(level == 2){
+        word = kindaTricky[Math.floor(Math.random() * kindaTricky.length)];
+    }
 
 
 

@@ -8,9 +8,15 @@
 </head>
 <body>
 <h1>HANGMAN</h1>
+<p>You have to guess all of the letters in the word and you only have eight guesses to do it. If you dont succeed, the man will die.</p>
 
+<select id = "level">
+    <option value = "1">Beginner</option>
+    <option value = "2">Intermediate</option>
+    <option value = "1">Expert</option>
+</select>
 
-<button id="start" onclick="startGame()">Start New Game</button>
+<button onclick="startGame()">Start New Game</button>
 
 <div id="hangFrame"></div>
 
